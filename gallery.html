@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery - OfficialRetouch Beauty Studio</title>
+  <meta name="description" content="View the professional hairstyling gallery of Azeez Oyindamola Elizabeth. Wig installations, braids, frontals, and natural hair transformations.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Filter Buttons Styling - Enhanced Visual Appeal */
+    .filter-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      margin: 3rem 0 2rem;
+      flex-wrap: wrap;
+      padding: 0 1rem;
+    }
+    .filter-btn {
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(135deg, var(--bg-light) 0%, #f8f8f8 100%);
+      border: 2px solid #e0e0e0;
+      border-radius: 50px;
+      color: var(--text-dark);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      min-width: 120px;
+      text-align: center;
+    }
+    .filter-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      transition: left 0.5s;
+    }
+    .filter-btn:hover::before {
+      left: 100%;
+    }
+    .filter-btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+      border-color: var(--primary-color);
+    }
+    .filter-btn.active {
+      background: linear-gradient(135deg, var(--primary-color) 0%, #f4e6a1 100%);
+      color: var(--secondary-color);
+      border-color: var(--primary-color);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+      transform: translateY(-2px);
+    }
+    .filter-btn i {
+      margin-right: 0.5rem;
+      font-size: 0.9rem;
+    }
+    /* Hidden Filter State */
+    .gallery-item.hidden {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      .filter-buttons {
+        gap: 0.5rem;
+        margin: 2rem 0 1rem;
+      }
+      .filter-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+        min-width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>OfficialRetouch</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Gallery Header -->
+  <header class="gallery-header">
+    <h1>Our Gallery</h1>
+    <p>Explore a curated selection of our professional hairstyling — from flawless frontal installations to creative braiding and wig transformations.</p>
+  </header>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all"><i class="fas fa-th-large"></i>All</button>
+    <button class="filter-btn" data-filter="braids"><i class="fas fa-braille"></i>Braids</button>
+    <button class="filter-btn" data-filter="frontals"><i class="fas fa-layer-group"></i>Frontals</button>
+     <button class="filter-btn" data-filter="wigs"><i class="fas fa-tint"></i>Wigs</button>
+    <button class="filter-btn" data-filter="frontals"><i class="fas fa-layer-group"></i>Haircare and Oils</button>
+    <button class="filter-btn" data-filter="curls"><i class="fas fa-spa"></i>Curls</button>
+    <button class="filter-btn" data-filter="official"><i class="fas fa-crown"></i>Official Retouch Original™</button>
+  </div>
+
+  <!-- Gallery Section -->
+  <section class="gallery-container">
+
+    <!-- Image Items -->
+    <div class="gallery-item" data-category="braids">
+      <img src="./img/Screenshot 2025-10-08 155421.png" alt="Braids Style">
+      <div class="gallery-overlay">
+        <h3>Black</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="wigs">
+      <img src="./img/Screenshot 2025-10-08 155517.png" alt="Wig Installation">
+      <div class="gallery-overlay">
+        <h3>Is</h3>
+      </div>
+    </div>
+  
+    <div class="gallery-item" data-category="Official">
+      <img src="./img/Screenshot 2025-10-08 155559.png" alt="Frontal Work">
+      <div class="gallery-overlay">
+        <h3>Beauty</h3>
+      </div>
+    </div>
+
+    <!-- Video Items -->
+    <div class="gallery-item" data-category="wigs">
+      <video autoplay muted loop playsinline>
+        <source src="./img/1.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Short Hair Ideas</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="frontals">
+      <video autoplay muted loop playsinline>
+        <source src="./img/2.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Experience Elegance</h3>
+      </div>
+    </div>
+
+ <div class="gallery-item" data-category="curls">
+      <video autoplay muted loop playsinline>
+        <source src="./img/24.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Elegance</h3>
+      </div>
+    </div>
+
+     <div class="gallery-item" data-category="curls">
+      <video autoplay muted loop playsinline>
+        <source src="./img/10.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Haircare Products</h3>
+      </div>
+    </div>
+
+      <div class="gallery-item" data-category="braids">
+      <video autoplay muted loop playsinline>
+        <source src="./img/20.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Clean Stitch Braids</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="frontals">
+      <video autoplay muted loop playsinline>
+        <source src="./img/4.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Seemless Frontals</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="wigs">
+      <video autoplay muted loop playsinline>
+        <source src="./img/5.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Her Wedding Dayyy</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="curls">
+      <video autoplay muted loop playsinline>
+        <source src="./img/15.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Bouncy Curls</h3>
+      </div>
+    </div> 
+
+    <div class="gallery-item" data-category="braids">
+      <video autoplay muted loop playsinline>
+        <source src="./img/16.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> All Back Perfection</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="frontals">
+      <video autoplay muted loop playsinline>
+        <source src="./img/6.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Frontal Melted</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="wigs">
+      <video autoplay muted loop playsinline>
+        <source src="./img/7.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Quality Bob Wigs</h3>
+      </div>
+    </div>
+
+<div class="gallery-item" data-category="curls">
+      <video autoplay muted loop playsinline>
+        <source src="./img/8.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Own the Curls</h3>
+      </div>
+    </div>
+
+<div class="gallery-item" data-category="official">
+      <video autoplay muted loop playsinline>
+        <source src="./img/9.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Be You (Special)</h3>
+      </div>
+    </div>
+
+<div class="gallery-item" data-category="wigs">
+      <video autoplay muted loop playsinline>
+        <source src="./img/3.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Cute Pixie Cut Wig</h3>
+      </div>
+    </div>
+ 
+<div class="gallery-item" data-category="official">
+      <video autoplay muted loop playsinline>
+        <source src="./img/11.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Our Achalugo</h3>
+      </div>
+    </div>
+ 
+<div class="gallery-item" data-category="curls">
+      <video autoplay muted loop playsinline>
+        <source src="./img/12.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Neat Weave, Soft Curls</h3>
+      </div>
+    </div>
+
+<div class="gallery-item" data-category="official">
+      <video autoplay muted loop playsinline>
+        <source src="./img/13.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Custom Order</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="braids">
+      <video autoplay muted loop playsinline>
+        <source src="./img/14.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Birthday Girl's Hair</h3>
+      </div>
+    </div>
+    
+    <div class="gallery-item" data-category="official">
+      <video autoplay muted loop playsinline>
+        <source src="./img/17.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Baby gal lifestyle </h3>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="wigs">
+      <video autoplay muted loop playsinline>
+        <source src="./img/18.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Your Dream Hair</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="frontals">
+      <video autoplay muted loop playsinline>
+        <source src="./img/19.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> A Masterpiece</h3>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="wigs">
+      <video autoplay muted loop playsinline>
+        <source src="./img/21.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Hair for every Occasion</h3>
+      </div>
+    </div>
+    
+    <div class="gallery-item" data-category="braids">
+      <video autoplay muted loop playsinline>
+        <source src="./img/22.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Giving '90s</h3>
+      </div>
+    </div>
+    
+    <div class="gallery-item" data-category="official">
+      <video autoplay muted loop playsinline>
+        <source src="./img/23.mp4" type="video/mp4">
+      </video>
+      <div class="gallery-overlay">
+        <h3><i class="fas fa-play"></i> Patronize us</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>OfficialRetouch Beauty Studio</h3>
+          <p>Transforming beauty with 12+ years of professional expertise.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <p>Phone: 08157057989</p>
+          <p>Email: stainlessmakeover13@gmail.com</p>
+          <p>Location: Ikorodu, Lagos, Nigeria</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 OfficialRetouch Beauty Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Background Music (Gallery Only) -->
+  <audio id="theme-music" loop preload="auto">
+    <source src="Hazelwood - At Ease (freetouse.com).mp3" type="audio/mpeg"> <!-- Upload a smooth MP3 file here; suggest royalty-free like soft jazz/lofi -->
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+  <script>
+    // Gallery-Only Theme Music (Auto-play on interaction; loops smoothly)
+    document.addEventListener('DOMContentLoaded', function() {
+      const audio = document.getElementById('theme-music');
+      let hasInteracted = false;
+
+      // Function to start music (muted initially to bypass autoplay policies)
+      function playMusic() {
+        if (!hasInteracted) {
+          audio.muted = true; // Start muted for auto-play
+          audio.play().then(() => {
+            audio.muted = false; // Unmute after starting
+            hasInteracted = true;
+          }).catch(e => {
+            console.log('Autoplay prevented:', e); // Fallback: user must click to play
+          });
+        } else {
+          audio.play();
+        }
+      }
+
+      // Trigger on first user interaction (e.g., click anywhere)
+      document.addEventListener('click', playMusic, { once: true });
+      document.addEventListener('keydown', playMusic, { once: true });
+
+      // Pause on page unload (when leaving gallery)
+      window.addEventListener('beforeunload', function() {
+        audio.pause();
+        audio.currentTime = 0;
+      });
+
+      // Optional: Volume fade-in for smoothness
+      audio.volume = 0;
+      audio.addEventListener('play', function() {
+        const fadeIn = setInterval(() => {
+          if (audio.volume < 0.3) { // Low volume for background
+            audio.volume += 0.05;
+          } else {
+            clearInterval(fadeIn);
+          }
+        }, 200);
+      });
+
+      // Gallery Filtering
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Update active button
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filterValue = btn.getAttribute('data-filter');
+
+          galleryItems.forEach(item => {
+            if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+              item.classList.remove('hidden');
+            } else {
+              item.classList.add('hidden');
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

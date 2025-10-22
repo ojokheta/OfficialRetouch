@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Enquiries - OfficialRetouch Beauty Studio</title>
+    <meta name="description" content="Elevate your hairstyling skills with expert training in wig making, braiding, frontal installations, and natural hair care. Enquire today with 12+ years of professional guidance.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Light theme overrides for contact form on services/training page */
+        .contact-form.light {
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .contact-form.light .form-group input,
+        .contact-form.light .form-group select,
+        .contact-form.light .form-group textarea {
+            background: white;
+            color: var(--text-dark);
+            border: 1px solid #ddd;
+        }
+        .contact-form.light .form-group input::placeholder,
+        .contact-form.light .form-group textarea::placeholder {
+            color: var(--text-light);
+        }
+        .contact-form.light .form-group input:focus,
+        .contact-form.light .form-group select:focus,
+        .contact-form.light .form-group textarea:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
+        .contact-form.light .form-group select {
+            color: var(--text-dark);
+        }
+        .contact-form.light .form-group select option {
+            background: white;
+            color: var(--text-dark);
+        }
+        .contact-form.light .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        /* Section padding and h2 styling */
+        .training-section {
+            padding: 80px 0;
+        }
+        .training-section h2 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .training-section p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        /* Service features list tweaks */
+        .service-features {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Simplified Navigation for Training Page -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>OfficialRetouch</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="services.html" class="nav-link">Back to Services</a>
+                <a href="index.html" class="nav-link">Back to Home</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Adapted for Training) -->
+    <section id="training-hero" class="hero motion-fade-up">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Training Enquiries</h1>
+                <h2>Master the Art of Hairstyling</h2>
+                <p class="hero-description">
+                    Unlock your potential with personalized training from Azeez Oyindamola Elizabeth. Gain 12+ years of expertise in wig making, braiding, frontal installations, and natural hair care through hands-on courses designed for aspiring professionals.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#enquiry-form" class="btn btn-primary">Start Your Enquiry</a>
+                    <a href="services.html" class="btn btn-secondary">Back to Services</a>
+                </div>
+                <div class="hero-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>08157057989</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Ikorodu, Lagos, Nigeria</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-photo">
+                    <img src="img/LOGO.png" alt="OfficialRetouch Beauty Studio">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Details Section -->
+    <div class="services-detailed">
+        <div class="container">
+            <section class="training-section motion-fade-up" id="training-details">
+                <h2>About Our Training Programs</h2>
+                <p>Whether you're a beginner or seasoned stylist, our courses offer flexible scheduling and small class sizes for maximum learning.</p>
+                <ul class="service-features">
+                    <li><strong>Beginner Fundamentals:</strong> 4 weeks – Basics of hair care, simple braids, and wig construction. Ideal for newcomers.</li>
+                    <li><strong>Advanced Techniques:</strong> 6 weeks – Frontal installations, creative styling, and natural hair treatments. Certification included.</li>
+                    <li><strong>Custom Workshops:</strong> 1-2 days – Specialized sessions on trending styles or business skills for stylists.</li>
+                    <li><strong>Investment:</strong> Starting at ₦150,000 (includes materials kit). Payment plans available.</li>
+                </ul>
+                <p style="text-align: center; font-size: 1.1rem; color: var(--text-light);">Trained by certified experts—join hundreds who've transformed their careers!</p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Training Enquiry Section (Adapted from Contact) -->
+    <section class="contact" id="enquiry-form">
+        <div class="container">
+            <div class="section-header motion-fade-up">
+                <h2>Ready to Enquire?</h2>
+                <p>Fill out the form below, and we'll contact you within 24 hours to discuss dates and details.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info motion-fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>08157057989</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>stainlessmakeover13@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Ikorodu, Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/officialretouchbeauty" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://tiktok.com/@officialretouch" target="_blank">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://wa.me/message/IMYIBYGWZEG7B1" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form motion-fade-left">
+                    <form action="https://formspree.io/f/your-form-id" method="POST"> <!-- Replace with your Formspree/ backend URL -->
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select name="course" required>
+                                <option value="">Select Training Program</option>
+                                <option value="beginner">Beginner Fundamentals</option>
+                                <option value="advanced">Advanced Techniques</option>
+                                <option value="custom">Custom Workshop</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="experience" placeholder="Tell us about your experience level (e.g., beginner, 2 years in braiding)..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>OfficialRetouch Beauty Studio</h3>
+                    <p>Transforming beauty with 12+ years of professional expertise</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Phone: 08157057989</p>
+                    <p>Email: stainlessmakeover13@gmail.com</p>
+                    <p>Location: Ikorodu, Lagos, Nigeria</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 OfficialRetouch Beauty Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
