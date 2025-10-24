@@ -33,13 +33,13 @@ body {
 
 /* Colors */
 :root {
-    --primary-color: #d4af37;
-    --secondary-color: #2c1810;
-    --accent-color: #f4f4f4;
+    --primary-color: #2d7a3e;
+    --secondary-color: #000000;
+    --accent-color: #ffffff;
     --text-dark: #333;
     --text-light: #666;
-    --bg-light: #fafafa;
-    --gradient: linear-gradient(135deg, #d4af37 0%, #f4e6a1 100%);
+    --bg-light: #ffffff;
+    --gradient: linear-gradient(135deg, #2d7a3e 0%, #4a9d5f 100%);
 }
 
 /* Navigation */
@@ -121,7 +121,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: var(--gradient);
+    background: white;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -207,7 +207,7 @@ body {
 }
 
 .btn-primary:hover {
-    background: #1a0f08;
+    background: #1f5a2d;
     transform: translateY(-2px);
 }
 
@@ -343,7 +343,7 @@ body {
 
 .achievement:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 15px 30px rgba(45, 122, 62, 0.3);
 }
 
 .achievement h4 {
@@ -617,7 +617,7 @@ body {
 
 .social-icons a:hover {
     transform: translateY(-5px) rotate(5deg);
-    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 10px 20px rgba(45, 122, 62, 0.4);
 }
 
 .contact-form {
@@ -655,7 +655,7 @@ body {
     outline: none;
     border-color: var(--primary-color);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 5px 15px rgba(45, 122, 62, 0.3);
 }
 
 .form-group select {
@@ -675,12 +675,12 @@ body {
 }
 
 .contact-form .btn-primary:hover {
-    background: #b8941f;
+    background: #1f5a2d;
 }
 
 /* Footer */
 .footer {
-    background: #1a0f08;
+    background: #1a1a1a;
     color: white;
     padding: 3rem 0 1rem;
 }
@@ -992,7 +992,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #b8941f;
+    background: #1f5a2d;
 }
 
 /* Smooth Scrolling */
@@ -1392,7 +1392,7 @@ html {
 
 .gallery-item:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.25);
+    box-shadow: 0 15px 30px rgba(45, 122, 62, 0.25);
 }
 
 .gallery-item img,
@@ -1539,7 +1539,7 @@ html {
 
 .gallery-item:hover {
   transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 15px 30px rgba(212, 175, 55, 0.25);
+  box-shadow: 0 15px 30px rgba(45, 122, 62, 0.25);
 }
 
 .gallery-item img,
