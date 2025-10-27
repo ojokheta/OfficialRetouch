@@ -1780,3 +1780,15 @@ html {
 .hamburger.active .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+/* ===== FIX: Ensure Services Page Shows on Mobile ===== */
+@media (max-width: 768px) {
+  .services-grid-detailed,
+  .service-card-detailed,
+  .motion-fade-up,
+  .motion-zoom-in,
+  .motion-stagger > * {
+    opacity: 1 !important;
+    transform: none !important;
+    display: block !important;
+  }
+}
