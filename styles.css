@@ -1792,3 +1792,140 @@ html {
     display: block !important;
   }
 }
+/* Logo Styles */
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img.logo-img {
+    height: 50px; /* adjust as needed */
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .nav-logo img.logo-img {
+        height: 40px;
+    }
+}
+/* Logo Styles */
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img.logo-img {
+    height: 70px; /* increased from 50px */
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .nav-logo img.logo-img {
+        height: 55px; /* also slightly larger on mobile */
+    }
+}
+/* Floating & Glowing Logo Animation */
+@keyframes floatGlow {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+        filter: drop-shadow(0 0 0px rgba(255, 192, 203, 0)); /* no glow */
+    }
+    50% {
+        transform: translateY(-10px) scale(1.1);
+        filter: drop-shadow(0 0 10px rgba(255, 105, 180, 0.8)); /* pinkish glow */
+    }
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img.logo-img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+    animation: floatGlow 3s ease-in-out infinite;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .nav-logo img.logo-img {
+        height: 55px;
+        animation: floatGlow 3.5s ease-in-out infinite;
+    }
+}
+/* ===== Header Section Styling ===== */
+.navbar {
+    background: linear-gradient(to bottom, rgba(190, 160, 255, 0.25), transparent);
+    /* very light purple fading down */
+    padding: 15px 0;
+    position: fixed; /* keeps it visible at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(6px);
+}
+
+/* Keeps content aligned nicely */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== Floating & Glowing Logo Animation ===== */
+@keyframes floatGlow {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+        filter: drop-shadow(0 0 0px rgba(190, 160, 255, 0));
+    }
+    50% {
+        transform: translateY(-10px) scale(1.1);
+        filter: drop-shadow(0 0 10px rgba(190, 160, 255, 0.8)); /* purple glow */
+    }
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img.logo-img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+    animation: floatGlow 3s ease-in-out infinite;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .nav-logo img.logo-img {
+        height: 55px;
+        animation: floatGlow 3.5s ease-in-out infinite;
+    }
+}
+.navbar {
+    background-color: rgba(190, 160, 255, 0.35); /* a bit less transparent */
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(2px); /* gentler blur */
+    -webkit-backdrop-filter: blur(2px); /* Safari support */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
