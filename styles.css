@@ -1929,3 +1929,260 @@ html {
     -webkit-backdrop-filter: blur(2px); /* Safari support */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
+.training-promo {
+    background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    border-top: 4px solid #d4af37; /* gold accent */
+}
+
+.promo-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.training-promo h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #d4af37; /* gold */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.training-promo p {
+    font-size: 1.3rem;
+    margin-bottom: 35px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-training {
+    display: inline-block;
+    background: #d4af37; /* gold */
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 18px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+}
+
+.btn-training:hover {
+    background: #fff;
+    color: #d4af37;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.5);
+}
+/* Pricing subsection inside service cards */
+.pricing-subsection {
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.pricing-subsection h4 {
+    color: var(--primary-gold);
+    font-size: 1.4rem;
+    margin: 1rem 0 0.8rem;
+    text-align: center;
+}
+
+.price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.8rem 0;
+}
+
+.price-list li {
+    font-size: 1.1rem;
+    margin: 0.6rem 0;
+    padding-left: 1.8rem;
+    position: relative;
+}
+
+.price-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-gold);
+    font-weight: bold;
+}
+
+/* Booking Policy Section */
+.booking-policy {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #111, #0a0a0a);
+}
+
+.booking-policy h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.2rem;
+    color: var(--primary-gold);
+    margin-bottom: 1.5rem;
+}
+
+.booking-policy ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    text-align: left;
+}
+
+.booking-policy li {
+    font-size: 1.15rem;
+    margin: 1rem 0;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.booking-policy li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-gold);
+    font-size: 1.4rem;
+}
+
+.booking-policy .highlight {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-gold);
+    margin-top: 1.5rem;
+}
+/* Cornrow pricing inside service card */
+.pricing-detail {
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.8rem 0;
+    text-align: left;
+}
+
+.pricing-detail h4 {
+    color: var(--primary-gold);
+    font-size: 1.35rem;
+    margin: 1.2rem 0 0.6rem;
+    text-align: center;
+}
+
+.price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.6rem 0 1.2rem;
+}
+
+.price-list li {
+    font-size: 1.05rem;
+    margin: 0.5rem 0;
+    padding-left: 1.6rem;
+    position: relative;
+}
+
+.price-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-gold);
+    font-weight: bold;
+}
+
+/* Booking Policy Section */
+.booking-policy {
+    padding: 60px 20px 40px;
+    text-align: center;
+    background: var(--dark-bg); /* or #111 if you haven't defined --dark-bg */
+}
+
+.booking-policy h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    color: var(--primary-gold);
+    margin-bottom: 1.5rem;
+}
+
+.booking-policy ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.booking-policy li {
+    margin: 0.9rem 0;
+    padding-left: 1.8rem;
+    position: relative;
+}
+
+.booking-policy li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-gold);
+    font-size: 1.4rem;
+}
+
+.policy-highlight {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-gold);
+    margin-top: 1.8rem;
+}
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;               /* space between buttons */
+    justify-content: center; /* center on all screen sizes */
+    margin-bottom: 2rem;
+}
+
+.hero-buttons .btn {
+    min-width: 160px;        /* prevent buttons from being too narrow */
+    text-align: center;
+    padding: 14px 28px;      /* slightly larger for better touch targets */
+    font-size: 1.05rem;
+}
+
+/* Optional: specific colors for new buttons */
+.btn-contact {
+    background: #555;        /* dark gray for contact */
+    color: white;
+}
+
+.btn-contact:hover {
+    background: #333;
+}
+
+.btn-training {
+    background: var(--primary-gold);
+    color: #000;
+}
+
+.btn-training:hover {
+    background: white;
+    color: var(--primary-gold);
+}
+
+/* Mobile stacking */
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-buttons .btn {
+        width: 80%;          /* wider on mobile for easy tapping */
+        max-width: 320px;
+    }
+}
